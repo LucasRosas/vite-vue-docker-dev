@@ -1,0 +1,17 @@
+version: '3.4'
+services:
+  vite-docker:
+    image: node-lts
+    container_name: vite-docker
+    entrypoint: /bin/sh
+    volumes:
+      - type: bind
+        source: ./
+        target: /srv/app
+    working_dir: /srv/app
+    ports:
+      - '8080:8080'
+      - '3000:8080'
+    expose:
+      - 8000
+    tty: true
