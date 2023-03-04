@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "vite": "vite --host",
-    "start": "docker-compose up --build -d && docker exec -it vite-docker sh -c 'npm install'",
-    "dev": "docker-compose up --build -d && docker exec -it vite-docker sh -c 'npm run vite'",
+    "start": "docker-compose up --build -d && docker exec -it vite-docker sh -c \"npm install\"",
+    "dev": "docker-compose up --build -d && docker exec -it vite-docker sh -c \"npm run vite\"",
     "build": "vite build",
     "preview": "vite preview",
     "test:unit": "vitest",
